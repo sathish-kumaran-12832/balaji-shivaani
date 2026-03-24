@@ -99,23 +99,23 @@
     /* ---- Scroll-reveal animation ---- */
     .anim {
       opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.8s cubic-bezier(.22,1,.36,1), transform 0.8s cubic-bezier(.22,1,.36,1);
+      transform: translateY(30px);
+      transition: opacity 0.5s cubic-bezier(.22,1,.36,1), transform 0.5s cubic-bezier(.22,1,.36,1);
     }
     .anim.show {
       opacity: 1;
       transform: translateY(0);
     }
-    .anim-d1 { transition-delay: 0.15s; }
-    .anim-d2 { transition-delay: 0.3s; }
-    .anim-d3 { transition-delay: 0.45s; }
-    .anim-d4 { transition-delay: 0.6s; }
-    .anim-d5 { transition-delay: 0.75s; }
+    .anim-d1 { transition-delay: 0.1s; }
+    .anim-d2 { transition-delay: 0.2s; }
+    .anim-d3 { transition-delay: 0.3s; }
+    .anim-d4 { transition-delay: 0.4s; }
+    .anim-d5 { transition-delay: 0.5s; }
 
     .anim-scale {
       opacity: 0;
       transform: scale(0.9);
-      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      transition: opacity 0.45s ease-out, transform 0.45s ease-out;
     }
     .anim-scale.show {
       opacity: 1;
@@ -210,43 +210,43 @@
     /* ---- Enhanced reveal: blur-in ---- */
     .anim-blur {
       opacity: 0;
-      filter: blur(8px);
-      transform: translateY(40px) scale(0.96);
-      transition: opacity .9s cubic-bezier(.22,1,.36,1),
-                  filter .9s cubic-bezier(.22,1,.36,1),
-                  transform .9s cubic-bezier(.22,1,.36,1);
+      filter: blur(6px);
+      transform: translateY(30px) scale(0.97);
+      transition: opacity .55s cubic-bezier(.22,1,.36,1),
+                  filter .55s cubic-bezier(.22,1,.36,1),
+                  transform .55s cubic-bezier(.22,1,.36,1);
     }
     .anim-blur.show { opacity: 1; filter: blur(0); transform: translateY(0) scale(1); }
 
     /* ---- Slide from left ---- */
     .anim-left {
       opacity: 0;
-      transform: translateX(-50px) rotate(-2deg);
-      transition: opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1);
+      transform: translateX(-40px) rotate(-2deg);
+      transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1);
     }
     .anim-left.show { opacity: 1; transform: translateX(0) rotate(0); }
 
     /* ---- Slide from right ---- */
     .anim-right {
       opacity: 0;
-      transform: translateX(50px) rotate(2deg);
-      transition: opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1);
+      transform: translateX(40px) rotate(2deg);
+      transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1);
     }
     .anim-right.show { opacity: 1; transform: translateX(0) rotate(0); }
 
     /* ---- Zoom + rotate entrance ---- */
     .anim-zoom {
       opacity: 0;
-      transform: scale(.6) rotate(-5deg);
-      transition: opacity 1s cubic-bezier(.22,1,.36,1), transform 1s cubic-bezier(.22,1,.36,1);
+      transform: scale(.7) rotate(-4deg);
+      transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1);
     }
     .anim-zoom.show { opacity: 1; transform: scale(1) rotate(0); }
 
     /* ---- Bounce entrance ---- */
     .anim-bounce {
       opacity: 0;
-      transform: translateY(60px);
-      transition: opacity .6s ease-out, transform .8s cubic-bezier(.34,1.56,.64,1);
+      transform: translateY(40px);
+      transition: opacity .4s ease-out, transform .55s cubic-bezier(.34,1.56,.64,1);
     }
     .anim-bounce.show { opacity: 1; transform: translateY(0); }
 
@@ -273,26 +273,26 @@
          Left side: 3 lanterns | Right side: 5 lanterns
          ═══════════════════════════════════════════════ -->
     <section class="screen">
-      <img src="./assets/I 1 1.svg" alt="Wedding hero" class="screen-bg">
+      <img src="./asset/I 1 1.svg" alt="Wedding hero" class="screen-bg">
 
       <!-- Golden floating particles -->
       <div id="particles-1" class="particles"></div>
 
       <!-- Lanterns — LEFT side (3) -->
-      <img src="./assets/lantern 1.svg" alt="" aria-hidden="true" class="absolute ln-a ln-reveal ln-reveal-d1" style="top:5%;left:3%;width:98px;">
-      <img src="./assets/lantern 2.svg" alt="" aria-hidden="true" class="absolute ln-b ln-reveal ln-reveal-d3" style="top:28%;left:4%;width:35px;">
-      <img src="./assets/lantern 4.svg" alt="" aria-hidden="true" class="absolute ln-c ln-reveal ln-reveal-d5" style="top:46%;left:2%;width:84px;">
+      <img src="./asset/lantern 1.svg" alt="" aria-hidden="true" class="absolute ln-a ln-reveal ln-reveal-d1" style="top:5%;left:3%;width:98px;">
+      <img src="./asset/lantern 2.svg" alt="" aria-hidden="true" class="absolute ln-b ln-reveal ln-reveal-d3" style="top:28%;left:4%;width:35px;">
+      <img src="./asset/lantern 4.svg" alt="" aria-hidden="true" class="absolute ln-c ln-reveal ln-reveal-d5" style="top:46%;left:2%;width:84px;">
 
       <!-- Lanterns — RIGHT side (5) -->
-      <img src="./assets/lantern 3.svg" alt="" aria-hidden="true" class="absolute ln-c ln-reveal ln-reveal-d2" style="top:3%;right:8%;width:99px;">
-      <img src="./assets/lantern 7.svg" alt="" aria-hidden="true" class="absolute ln-a ln-reveal ln-reveal-d4" style="top:9%;right:15%;width:55px;">
-      <img src="./assets/lantern 5.svg" alt="" aria-hidden="true" class="absolute ln-b ln-reveal ln-reveal-d6" style="top:25%;right:4%;width:43px;">
-      <img src="./assets/lantern 6.svg" alt="" aria-hidden="true" class="absolute ln-c ln-reveal ln-reveal-d7" style="top:40%;right:9%;width:65px;">
-      <img src="./assets/lantern 8.svg" alt="" aria-hidden="true" class="absolute ln-a ln-reveal ln-reveal-d8" style="top:52%;right:12%;width:54px;">
+      <img src="./asset/lantern 3.svg" alt="" aria-hidden="true" class="absolute ln-c ln-reveal ln-reveal-d2" style="top:3%;right:8%;width:99px;">
+      <img src="./asset/lantern 7.svg" alt="" aria-hidden="true" class="absolute ln-a ln-reveal ln-reveal-d4" style="top:9%;right:15%;width:55px;">
+      <img src="./asset/lantern 5.svg" alt="" aria-hidden="true" class="absolute ln-b ln-reveal ln-reveal-d6" style="top:25%;right:4%;width:43px;">
+      <img src="./asset/lantern 6.svg" alt="" aria-hidden="true" class="absolute ln-c ln-reveal ln-reveal-d7" style="top:40%;right:9%;width:65px;">
+      <img src="./asset/lantern 8.svg" alt="" aria-hidden="true" class="absolute ln-a ln-reveal ln-reveal-d8" style="top:52%;right:12%;width:54px;">
 
       <!-- Content — bs1.svg positioned at top 35% -->
       <div class="screen-content justify-start" style="padding-top:35%;">
-        <img src="./assets/bs 1.svg" alt="Balaji and Shivaani"
+        <img src="./asset/bs 1.svg" alt="Balaji and Shivaani"
              class="anim-zoom glow-pulse"
              style="width:211px;height:211px;">
       </div>
@@ -302,12 +302,12 @@
          SCREEN 2 — Balaji & Shivaani + Invitation Text
          ═══════════════════════════════════════════════ -->
     <section class="screen">
-      <img src="./assets/I 2 1.svg" alt="Couple with temple" class="screen-bg">
+      <img src="./asset/I 2 1.svg" alt="Couple with temple" class="screen-bg">
 
       <div class="screen-content">
-        <img src="./assets/Balaji & Shivaani.svg" alt="Balaji & Shivaani"
+        <img src="./asset/Balaji & Shivaani.svg" alt="Balaji & Shivaani"
              class="anim-blur absolute" style="top:25%;width:225px;">
-        <img src="./assets/With grateful hearts, we invite you to share in the celebration of our wedding and the beginning of our forever..svg"
+        <img src="./asset/With grateful hearts, we invite you to share in the celebration of our wedding and the beginning of our forever..svg"
              alt="With grateful hearts, we invite you to share in the celebration of our wedding and the beginning of our forever."
              class="anim-blur anim-d1 absolute" style="top:47%;width:305px;">
       </div>
@@ -317,28 +317,28 @@
          SCREEN 3 — Event Details: Reception & Wedding
          ═══════════════════════════════════════════════ -->
     <section class="screen">
-      <img src="./assets/I 3 1.svg" alt="Wedding venue" class="screen-bg">
+      <img src="./asset/I 3 1.svg" alt="Wedding venue" class="screen-bg">
 
       <div class="screen-content justify-center">
         <div class="flex flex-col items-center w-full px-5" style="gap:15rem;">
 
           <!-- Event Card 1: Reception -->
           <div class="anim-left px-5 py-5 w-full flex flex-col items-center gap-3">
-            <img src="./assets/Reception.svg" alt="Reception" style="width:129px;">
+            <img src="./asset/Reception.svg" alt="Reception" style="width:129px;">
             <div class="flex items-center justify-center gap-6 w-full">
-              <img src="./assets/17 MAY 2026.svg" alt="17 May 2026" style="width:120px;">
+              <img src="./asset/17 MAY 2026.svg" alt="17 May 2026" style="width:120px;">
               <div class="w-[2px] h-[60px] bg-wedding-blue-light"></div>
-              <img src="./assets/SUN 7PM.svg" alt="Sunday 7 PM" style="width:72px;">
+              <img src="./asset/SUN 7PM.svg" alt="Sunday 7 PM" style="width:72px;">
             </div>
           </div>
 
           <!-- Event Card 2: Wedding -->
           <div class="anim-right anim-d1 px-5 py-5 w-full flex flex-col items-center gap-3">
-            <img src="./assets/Wedding.svg" alt="Wedding" style="width:115px;">
+            <img src="./asset/Wedding.svg" alt="Wedding" style="width:115px;">
             <div class="flex items-center justify-center gap-6 w-full">
-              <img src="./assets/18 MAY 2026.svg" alt="18 May 2026" style="width:120px;">
+              <img src="./asset/18 MAY 2026.svg" alt="18 May 2026" style="width:120px;">
               <div class="w-[2px] h-[60px] bg-wedding-blue-light"></div>
-              <img src="./assets/MON 9AM.svg" alt="Monday 9 AM" style="width:72px;">
+              <img src="./asset/MON 9AM.svg" alt="Monday 9 AM" style="width:72px;">
             </div>
           </div>
 
@@ -350,15 +350,15 @@
          SCREEN 4 — See the Route / Map
          ═══════════════════════════════════════════════ -->
     <section class="screen">
-      <img src="./assets/I 4 1.svg" alt="Wedding location" class="screen-bg">
+      <img src="./asset/I 4 1.svg" alt="Wedding location" class="screen-bg">
 
       <div class="screen-content justify-start" style="padding-top:50%;">
         <div class="flex flex-col items-center px-6" style="gap:1.75rem;">
-          <img src="./assets/See the route.svg" alt="See the route"
+          <img src="./asset/See the route.svg" alt="See the route"
                class="anim-bounce" style="width:240px;">
 
           <a href="#" class="anim-blur anim-d1 inline-block" aria-label="Click to open map">
-            <img src="./assets/Click to open map.svg" alt="Click to open map" style="width:200px;">
+            <img src="./asset/Click to open map.svg" alt="Click to open map" style="width:200px;">
           </a>
         </div>
       </div>
@@ -368,7 +368,7 @@
          SCREEN 5 — Countdown + Closing
          ═══════════════════════════════════════════════ -->
     <section class="screen">
-      <img src="./assets/I 5 1.svg" alt="Celebration photo" class="screen-bg">
+      <img src="./asset/I 5 1.svg" alt="Celebration photo" class="screen-bg">
 
       <!-- Golden floating particles -->
       <div id="particles-5" class="particles"></div>
@@ -376,7 +376,7 @@
       <div class="screen-content" style="top:25%;">
         <div class="flex flex-col items-center gap-6 px-6">
           <!-- Countdown heading -->
-          <img src="./assets/The countdown begins.svg" alt="The countdown begins"
+          <img src="./asset/The countdown begins.svg" alt="The countdown begins"
                class="anim-blur" style="width:332px;">
 
           <!-- Live Countdown Timer -->
@@ -411,7 +411,7 @@
       var total = screens.length;
       var current = 0;
       var isAnimating = false;
-      var DURATION = 1000; // ms for transition
+      var DURATION = 600; // ms for transition
 
       /* ---- Initialize: first screen active ---- */
       screens[0].classList.add('is-active');
@@ -423,7 +423,7 @@
         // Small delay so transform settles first
         setTimeout(function () {
           for (var i = 0; i < items.length; i++) items[i].classList.add('show');
-        }, 150);
+        }, 80);
       }
 
       /* ---- Hide content animations for a screen ---- */
